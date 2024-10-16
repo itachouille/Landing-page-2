@@ -11,12 +11,16 @@ const Navbar = () => {
           <img className="size-10" src={Logo} alt="logo" />
           <span className="pl-1 font-bold">Squaree</span>
         </a>
-        <div className="flex">
+        <div className="flex gap-10">
           {navigation.map((item) => (
             <a key={item.id} className="flex text-lg" href={item.url}>
               {item.title}
               {item.icon ? (
-                <img className="size-4 pt-2" src={ArrowDown} alt="arrow icon" />
+                <img
+                  className="ml-2 mt-2 size-3"
+                  src={ArrowDown}
+                  alt="arrow icon"
+                />
               ) : null}
             </a>
           ))}
