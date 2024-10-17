@@ -6,7 +6,7 @@ import IncreaseChart from "../assets/increase-chart.svg";
 const Increase = () => {
   return (
     <section className="mt-[500px] flex flex-col">
-      <div className="mx-auto w-[1000px]">
+      <div className="mx-auto max-w-6xl">
         <p className="text-center text-3xl text-black/50">
           We have the fast paced growing companies with us
         </p>
@@ -51,7 +51,7 @@ const Increase = () => {
           </div>
         </div>
         <div className="mt-14 flex w-full justify-center">
-          <button className="rounded-3xl bg-[#F2B53C] px-6 py-4 text-xl text-white">
+          <button className="rounded-3xl bg-[#F2B53C] px-6 py-4 font-manrope text-xl text-white">
             Explore our way
           </button>
         </div>

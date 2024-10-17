@@ -34,7 +34,7 @@ const HeroCards = () => {
             </div>
           </div>
         </div>
-        <div className="border border-[#808080]/50" />
+        <div className="border border-[#808080]/20" />
         <div className="px-8 pb-4 pt-10">
           <div className="flex rounded-3xl bg-black p-2">
             <div className="flex size-20 flex-col items-center justify-center rounded-3xl bg-[#CFDDDB]">

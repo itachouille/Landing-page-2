@@ -82,9 +82,9 @@ const Apps = () => {
             <div className="flex size-36 items-center justify-center rounded-3xl border bg-[#F1F1F1]/50" />
           </div>
         </div>
-        <div className="py-12 pl-4">
-          <h2 className="w-[310px] font-dm text-5xl font-medium">
-            Seamless integration with best apps
+        <div className="flex flex-col justify-center pl-20">
+          <h2 className="font-dm text-6xl font-medium">
+            Seamless <br /> integration <br /> with best apps
           </h2>
           <p className="pt-4 text-lg font-medium text-black/50">
             What ever you use, we integrate with the best of best

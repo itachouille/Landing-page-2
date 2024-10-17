@@ -6,7 +6,7 @@ import Testimonial4 from "../assets/testimonial-4.png";
 const Testimonials = () => {
   return (
     <section className="mt-[200px]">
-      <div className="mx-auto flex w-[1200px] flex-col">
+      <div className="mx-auto flex max-w-6xl flex-col">
         <h2 className="text-center font-dm text-6xl font-semibold">
           What squaree users say
         </h2>
@@ -56,7 +56,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 flex justify-around">
+        <div className="mt-6 flex justify-around">
           <div className="flex h-[260px] w-[620px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F1F1F1] p-8">
             <p className="font-dm text-2xl font-medium">
               It feels much more safe
