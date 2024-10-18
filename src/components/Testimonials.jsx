@@ -14,11 +14,11 @@ const Testimonials = () => {
           Here is how homely can help you
         </p>
         <div className="mt-10 flex justify-around">
-          <div className="flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F1F1F1] p-8">
+          <div className="flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-gray-100 p-8">
             <p className="font-dm text-2xl font-medium">
               Brilliant houses to rent
             </p>
-            <p className="mr-20 text-black/90">
+            <p className="mr-20 text-gray-600">
               All eFounders teams have moved to Cycle for all things product
               management and it is truly a game-changer.
             </p>
@@ -30,15 +30,15 @@ const Testimonials = () => {
               />
               <div className="flex flex-col items-start pl-2">
                 <span>John Master</span>
-                <span className="text-black/50">Director, Blue</span>
+                <span className="text-gray-500">Director, Blue</span>
               </div>
             </div>
           </div>
-          <div className="flex h-[260px] w-[620px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F1F1F1] p-8">
+          <div className="flex h-[260px] w-[620px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-gray-100 p-8">
             <p className="font-dm text-2xl font-medium">
               Convenient for searching apartments
             </p>
-            <p className="mr-20 text-black/90">
+            <p className="mr-20 text-gray-600">
               Cycle makes it easy to contact the most relevant users whenever I
               need feedback on a new product initiative. It helps me capture all
               the necessary customer context without friction.
@@ -51,17 +51,17 @@ const Testimonials = () => {
               />
               <div className="flex flex-col items-start pl-2">
                 <span>Jane Doe</span>
-                <span className="text-black/50">CEO, Jinx</span>
+                <span className="text-gray-500">CEO, Jinx</span>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-6 flex justify-around">
-          <div className="flex h-[260px] w-[620px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F1F1F1] p-8">
+          <div className="flex h-[260px] w-[620px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-gray-100 p-8">
             <p className="font-dm text-2xl font-medium">
               It feels much more safe
             </p>
-            <p className="mr-20 text-black/90">
+            <p className="mr-20 text-gray-600">
               As a company with a strong Slack culture, it’s important that we
               find ways to meet our champions where they are, and Channeled
               allows us to do just that.
@@ -74,15 +74,15 @@ const Testimonials = () => {
               />
               <div className="flex flex-col items-start pl-2">
                 <span>Fred Pussa</span>
-                <span className="text-black/50">CEO, Vorn</span>
+                <span className="text-gray-500">CEO, Vorn</span>
               </div>
             </div>
           </div>
-          <div className="flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F1F1F1] p-8">
+          <div className="flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-gray-100 p-8">
             <p className="font-dm text-2xl font-medium">
               Secure search for all
             </p>
-            <p className="mr-20 text-black/90">
+            <p className="mr-20 text-gray-600">
               All eFounders teams have moved to Cycle for all things product
               management and it is truly a game-changer.
             </p>
@@ -94,7 +94,7 @@ const Testimonials = () => {
               />
               <div className="flex flex-col items-start pl-2">
                 <span>Anna Task</span>
-                <span className="text-black/50">Director, Phax</span>
+                <span className="text-gray-500">Director, Phax</span>
               </div>
             </div>
           </div>

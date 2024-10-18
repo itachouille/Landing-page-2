@@ -28,7 +28,7 @@ const Footer = () => {
             <span>Follow us on twitter</span>
             <a href="/">notion.com</a>
           </div>
-          <button className="rounded-xl bg-yellow-400 text-white">
+          <button className="rounded-xl bg-yellow-500 text-white">
             Follow
           </button>
         </div>
