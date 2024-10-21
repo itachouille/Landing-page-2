@@ -43,7 +43,7 @@ const Pricing = () => {
               and impactful.
             </p>
             <div className="border border-gray-200" />
-            <p>Everything in the Free plan, plus</p>
+            <p className="text-gray-500">Everything in the Free plan, plus</p>
             <ul className="pl-4">
               <li className="list-disc font-manrope">Access to All Features</li>
               <li className="list-disc pt-4 font-manrope">
