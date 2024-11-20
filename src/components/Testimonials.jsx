@@ -1,7 +1,7 @@
-import Testimonial1 from "../assets/testimonial-1.png";
-import Testimonial2 from "../assets/testimonial-2.png";
-import Testimonial3 from "../assets/testimonial-3.png";
-import Testimonial4 from "../assets/testimonial-4.png";
+import Testimonial1 from "../assets/testimonials/testimonial-1.png";
+import Testimonial2 from "../assets/testimonials/testimonial-2.png";
+import Testimonial3 from "../assets/testimonials/testimonial-3.png";
+import Testimonial4 from "../assets/testimonials/testimonial-4.png";
 
 const Testimonials = () => {
   return (
