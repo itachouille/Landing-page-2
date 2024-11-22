@@ -2,25 +2,58 @@ import FluidGlu from "../assets/fluidGlu.svg";
 import Hikkeno from "../assets/hikkeno.svg";
 import Bubble from "../assets/bubble.svg";
 import IncreaseChart from "../assets/increase-chart.svg";
+import { motion } from "motion/react";
 
 const Increase = () => {
   return (
-    <section className="mt-[500px] flex flex-col">
-      <div className="mx-auto max-w-6xl">
-        <p className="text-center text-3xl text-gray-500">
-          We have the fast paced growing companies with us
-        </p>
-        <div className="flex justify-between py-10">
-          <img src={FluidGlu} alt="Fluid glu's logo" />
-          <img src={Hikkeno} alt="Hikkeno's logo" />
-          <img src={Bubble} alt="Bubble's logo" />
-        </div>
+    <section className="mt-40">
+      <p className="text-center text-3xl text-gray-500">
+        We have the fast paced growing companies with us
+      </p>
+
+      <div
+        className="relative mt-4 flex overflow-x-hidden"
+        style={{
+          maskImage:
+            "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+        }}
+      >
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="flex shrink-0"
+        >
+          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
+          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
+          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
+          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
+          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
+          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
+        </motion.div>
+
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="flex shrink-0"
+        >
+          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
+          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
+          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
+          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
+          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
+          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
+        </motion.div>
       </div>
-      <div className="mx-auto w-[900px] pt-36">
+
+      <div className="pt-40">
         <h2 className="text-center font-dm text-6xl font-semibold">
           Turn your growth in to Squaree
         </h2>
-        <p className="mx-auto w-[700px] pt-8 text-center font-manrope text-gray-500">
+        <p className="mx-auto mt-8 w-[700px] text-center font-manrope text-gray-500">
           The expectation that productivity should always lead to tangible
           results or accomplishments & notion that certain types of work or
           activities are more valuable or productive than others.

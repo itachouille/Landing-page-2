@@ -5,7 +5,7 @@ import Testimonial4 from "../assets/testimonials/testimonial-4.png";
 
 const Testimonials = () => {
   return (
-    <section className="mt-[200px]">
+    <section className="mt-40">
       <div className="mx-auto flex max-w-6xl flex-col">
         <h2 className="text-center font-dm text-6xl font-semibold">
           What squaree users say

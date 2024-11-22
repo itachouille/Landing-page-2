@@ -5,8 +5,8 @@ import ArrowDown from "../assets/arrowDown.svg";
 
 const Navbar = () => {
   return (
-    <nav className="sticky inset-x-0 top-0 z-50 mx-auto mt-10 h-20 max-w-[1400px] rounded-2xl border border-gray-200 bg-white px-6 shadow-lg backdrop-blur-lg transition-all">
-      <div className="flex size-full items-center justify-between">
+    <nav className="sticky top-10 z-50 w-full rounded-2xl border border-gray-200 bg-white p-5 shadow-lg">
+      <div className="flex items-center justify-between">
         <a className="flex items-center" href="/">
           <img className="size-10" src={Logo} alt="logo" />
           <span className="pl-1 font-bold">Squaree</span>

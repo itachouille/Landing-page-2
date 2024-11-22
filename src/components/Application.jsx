@@ -3,8 +3,8 @@ import DualCard from "../assets/dualCard.svg";
 
 const Application = () => {
   return (
-    <section className="pt-20">
-      <div className="relative mx-auto flex w-[1000px] justify-between">
+    <section className="pt-40">
+      <div className="relative flex">
         <img src={BrandLogo} alt="brand" />
         <div className="pt-28">
           <h2 className="font-dm text-5xl font-medium">
@@ -17,7 +17,7 @@ const Application = () => {
         </div>
       </div>
 
-      <div className="mt-[200px] flex">
+      <div className="mt-40 flex">
         <div className="flex flex-col justify-center pl-20">
           <h2 className="font-dm text-6xl font-medium">
             Seamless <br /> integration <br /> with best apps

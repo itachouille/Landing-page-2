@@ -2,7 +2,7 @@ import Logo from "../assets/logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="mt-48 w-full bg-gray-100">
+    <footer className="mt-40 bg-gray-100">
       <div className="mx-auto flex max-w-6xl justify-between px-12 py-24">
         <div className="max-w-64">
           <a className="flex items-center" href="/">

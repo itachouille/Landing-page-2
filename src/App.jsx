@@ -8,7 +8,7 @@ import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <>
+    <div className="mx-auto flex max-w-7xl flex-col items-center justify-center">
       <Navbar />
       <Hero />
       <Increase />
@@ -16,7 +16,7 @@ function App() {
       <Testimonials />
       <Pricing />
       <Footer />
-    </>
+    </div>
   );
 }
 
