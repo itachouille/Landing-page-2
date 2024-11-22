@@ -28,7 +28,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="mt-40">
+    <section className="mt-40 w-full">
       <motion.div
         className="text-center"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -52,7 +52,7 @@ const Hero = () => {
         </p>
       </motion.div>
 
-      <div className="mt-12 flex justify-center gap-10">
+      <div className="relative flex h-[500px] pt-20">
         <motion.img
           src={HeroCard1}
           alt="Hero Card 1"
@@ -60,6 +60,7 @@ const Hero = () => {
           variants={cardVariants}
           initial="hidden"
           animate="visible"
+          className="absolute -left-[15%]"
         />
         <motion.img
           src={HeroCard2}
@@ -69,27 +70,29 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.2 }}
+          className="absolute left-[15%] top-[40%]"
         />
-        <div className="flex flex-col gap-10">
-          <motion.img
-            src={HeroCard3}
-            alt="Hero Card 3"
-            custom="bottom"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 0.4 }}
-          />
-          <motion.img
-            src={HeroCard4}
-            alt="Hero Card 4"
-            custom="right"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 0.6 }}
-          />
-        </div>
+
+        <motion.img
+          src={HeroCard3}
+          alt="Hero Card 3"
+          custom="bottom"
+          variants={cardVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.4 }}
+          className="absolute left-[48%] top-16"
+        />
+        <motion.img
+          src={HeroCard4}
+          alt="Hero Card 4"
+          custom="right"
+          variants={cardVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.6 }}
+          className="absolute left-[52%] top-[55%]"
+        />
         <motion.img
           src={HeroCard5}
           alt="Hero Card 5"
@@ -98,6 +101,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.8 }}
+          className="absolute -right-48 top-[62%]"
         />
       </div>
     </section>

@@ -7,12 +7,12 @@ import { motion } from "motion/react";
 const Increase = () => {
   return (
     <section className="mt-40">
-      <p className="text-center text-3xl text-gray-500">
+      <p className="pt-40 text-center text-3xl text-gray-500">
         We have the fast paced growing companies with us
       </p>
 
       <div
-        className="relative mt-4 flex overflow-x-hidden"
+        className="relative flex overflow-x-hidden pt-10"
         style={{
           maskImage:
             "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",

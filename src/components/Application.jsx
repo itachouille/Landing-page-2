@@ -4,9 +4,9 @@ import DualCard from "../assets/dualCard.svg";
 const Application = () => {
   return (
     <section className="pt-40">
-      <div className="relative flex">
-        <img src={BrandLogo} alt="brand" />
-        <div className="pt-28">
+      <div className="flex w-full items-center">
+        <img src={BrandLogo} alt="brand" className="-translate-x-20" />
+        <div>
           <h2 className="font-dm text-5xl font-medium">
             Know your productivity by squaree
           </h2>
