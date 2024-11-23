@@ -5,7 +5,7 @@ import ArrowDown from "../assets/arrowDown.svg";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-10 z-50 w-full rounded-2xl border border-gray-200 bg-white p-5 shadow-lg">
+    <nav className="border-gray/10 sticky top-10 z-50 w-full rounded-2xl border bg-white p-5 shadow-lg">
       <div className="flex items-center justify-between">
         <a className="flex items-center" href="/">
           <img className="size-10" src={Logo} alt="logo" />

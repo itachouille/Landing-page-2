@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 const Increase = () => {
   return (
     <section className="mt-40">
-      <p className="pt-40 text-center text-3xl text-gray-500">
+      <p className="text-gray/60 text-center text-3xl">
         We have the fast paced growing companies with us
       </p>
 
@@ -53,7 +53,7 @@ const Increase = () => {
         <h2 className="text-center font-dm text-6xl font-semibold">
           Turn your growth in to Squaree
         </h2>
-        <p className="mx-auto mt-8 w-[700px] text-center font-manrope text-gray-500">
+        <p className="text-gray mx-auto mt-8 w-[700px] text-center font-manrope">
           The expectation that productivity should always lead to tangible
           results or accomplishments & notion that certain types of work or
           activities are more valuable or productive than others.
@@ -66,25 +66,25 @@ const Increase = () => {
         <div className="flex justify-around pt-8 font-dm">
           <div className="flex flex-col items-center">
             <span className="text-6xl font-semibold">200%</span>
-            <span className="w-40 pt-4 text-center text-gray-500">
+            <span className="text-gray/60 w-40 pt-4 text-center">
               Increase in new pipeline generated
             </span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-6xl font-semibold">70%</span>
-            <span className="w-40 pt-4 text-center text-gray-500">
+            <span className="text-gray/60 w-40 pt-4 text-center">
               Increase in form workforce
             </span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-6xl font-semibold">40%</span>
-            <span className="w-40 pt-4 text-center text-gray-500">
+            <span className="text-gray/60 w-40 pt-4 text-center">
               Decrease in cost per lead
             </span>
           </div>
         </div>
         <div className="mt-14 flex w-full justify-center">
-          <button className="rounded-3xl bg-yellow-500 px-6 py-4 font-manrope text-xl text-white">
+          <button className="bg-orange rounded-3xl px-6 py-4 font-manrope text-xl text-white">
             Explore our way
           </button>
         </div>

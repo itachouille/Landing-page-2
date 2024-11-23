@@ -44,7 +44,7 @@ const Hero = () => {
           <br />
           growth starts here
         </h1>
-        <p className="pt-6 font-manrope text-sm text-gray-500">
+        <p className="text-gray/60 pt-6 font-manrope text-sm">
           Squaree helps users to go from Zero to Hero with Pockets flow’s simple
           platform that helps
           <br />
@@ -52,57 +52,59 @@ const Hero = () => {
         </p>
       </motion.div>
 
-      <div className="relative flex h-[500px] pt-20">
-        <motion.img
-          src={HeroCard1}
-          alt="Hero Card 1"
-          custom="left"
-          variants={cardVariants}
-          initial="hidden"
-          animate="visible"
-          className="absolute -left-[15%]"
-        />
-        <motion.img
-          src={HeroCard2}
-          alt="Hero Card 2"
-          custom="top"
-          variants={cardVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.2 }}
-          className="absolute left-[15%] top-[40%]"
-        />
-
-        <motion.img
-          src={HeroCard3}
-          alt="Hero Card 3"
-          custom="bottom"
-          variants={cardVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.4 }}
-          className="absolute left-[48%] top-16"
-        />
-        <motion.img
-          src={HeroCard4}
-          alt="Hero Card 4"
-          custom="right"
-          variants={cardVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.6 }}
-          className="absolute left-[52%] top-[55%]"
-        />
-        <motion.img
-          src={HeroCard5}
-          alt="Hero Card 5"
-          custom="top"
-          variants={cardVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.8 }}
-          className="absolute -right-48 top-[62%]"
-        />
+      <div className="flex w-full items-start justify-center gap-8 pt-20">
+        <div className="mt-8 shrink-0">
+          <motion.img
+            src={HeroCard1}
+            alt="Hero Card 1"
+            custom="left"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+          />
+        </div>
+        <div className="mt-24 shrink-0">
+          <motion.img
+            src={HeroCard2}
+            alt="Hero Card 2"
+            custom="top"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.2 }}
+          />
+        </div>
+        <div className="flex shrink-0 flex-col gap-16">
+          <motion.img
+            src={HeroCard3}
+            alt="Hero Card 3"
+            custom="bottom"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.4 }}
+          />
+          <motion.img
+            src={HeroCard4}
+            alt="Hero Card 4"
+            custom="right"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.6 }}
+          />
+        </div>
+        <div className="mt-56 shrink-0">
+          <motion.img
+            src={HeroCard5}
+            alt="Hero Card 5"
+            custom="top"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.8 }}
+          />
+        </div>
       </div>
     </section>
   );
