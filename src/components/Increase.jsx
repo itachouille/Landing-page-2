@@ -5,14 +5,28 @@ import IncreaseChart from "../assets/increase-chart.svg";
 import { motion } from "motion/react";
 
 const Increase = () => {
+  const logos = [FluidGlu, Hikkeno, Bubble];
+
   return (
-    <section className="mt-40">
-      <p className="text-gray/60 text-center text-3xl">
+    <section className="mt-20 max-w-lg md:mt-40 md:max-w-7xl">
+      <p className="text-center text-lg text-gray/60 md:text-3xl">
         We have the fast paced growing companies with us
       </p>
 
+      <div className="flex items-center justify-around space-x-4 md:hidden">
+        {logos.map((logo, key) => (
+          <div key={key} className="aspect-square w-1/4 max-w-[120px]">
+            <img
+              src={logo}
+              alt={`Logo ${key + 1}`}
+              className="size-full object-contain"
+            />
+          </div>
+        ))}
+      </div>
+
       <div
-        className="relative flex overflow-x-hidden pt-10"
+        className="relative hidden overflow-x-hidden pt-16 md:flex"
         style={{
           maskImage:
             "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
@@ -20,74 +34,65 @@ const Increase = () => {
             "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
         }}
       >
-        <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="flex shrink-0"
-        >
-          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
-          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
-          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
-          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
-          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
-          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
-        </motion.div>
-
-        <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="flex shrink-0"
-        >
-          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
-          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
-          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
-          <img src={FluidGlu} alt="Fluid glu's logo" className="pr-20" />
-          <img src={Hikkeno} alt="Hikkeno's logo" className="pr-20" />
-          <img src={Bubble} alt="Bubble's logo" className="pr-20" />
-        </motion.div>
+        {[...Array(2)].map((_, index) => (
+          <motion.div
+            key={index}
+            initial={{ x: 0 }}
+            animate={{ x: "-100%" }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            className="flex shrink-0 gap-20"
+          >
+            {logos.map((logo, idx) => (
+              <img
+                key={idx}
+                src={logo}
+                alt={`Carousel Logo ${idx + 1}`}
+                className="h-20 object-contain"
+              />
+            ))}
+            <div className="w-10 shrink-0" />
+          </motion.div>
+        ))}
       </div>
 
-      <div className="pt-40">
-        <h2 className="text-center font-dm text-6xl font-semibold">
-          Turn your growth in to Squaree
+      <div className="pt-20 md:pt-40">
+        <h2 className="text-center font-dm text-4xl font-semibold md:text-6xl">
+          Turn your growth into Squaree
         </h2>
-        <p className="text-gray mx-auto mt-8 w-[700px] text-center font-manrope">
+        <p className="mx-auto mt-8 max-w-3xl px-4 text-center font-manrope text-gray md:px-0">
           The expectation that productivity should always lead to tangible
           results or accomplishments & notion that certain types of work or
           activities are more valuable or productive than others.
         </p>
         <img
-          className="mx-auto pt-6"
+          className="mx-auto mt-6 w-3/4 max-w-md"
           src={IncreaseChart}
           alt="Increase chart"
         />
-        <div className="flex justify-around pt-8 font-dm">
-          <div className="flex flex-col items-center">
-            <span className="text-6xl font-semibold">200%</span>
-            <span className="text-gray/60 w-40 pt-4 text-center">
-              Increase in new pipeline generated
+      </div>
+
+      <div className="flex flex-wrap justify-around gap-8 pt-8 font-dm">
+        {[
+          { value: "200%", label: "Increase in new pipeline generated" },
+          { value: "70%", label: "Increase in form workforce" },
+          { value: "40%", label: "Decrease in cost per lead" },
+        ].map((stat, idx) => (
+          <div key={idx} className="flex flex-col items-center">
+            <span className="text-6xl font-semibold">{stat.value}</span>
+            <span className="mt-4 max-w-xs text-center text-gray/60">
+              {stat.label}
             </span>
           </div>
-          <div className="flex flex-col items-center">
-            <span className="text-6xl font-semibold">70%</span>
-            <span className="text-gray/60 w-40 pt-4 text-center">
-              Increase in form workforce
-            </span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-6xl font-semibold">40%</span>
-            <span className="text-gray/60 w-40 pt-4 text-center">
-              Decrease in cost per lead
-            </span>
-          </div>
-        </div>
-        <div className="mt-14 flex w-full justify-center">
-          <button className="bg-orange rounded-3xl px-6 py-4 font-manrope text-xl text-white">
-            Explore our way
-          </button>
-        </div>
+        ))}
+      </div>
+
+      <div className="mt-14 flex w-full justify-center">
+        <button
+          className="rounded-3xl border bg-orange px-6 py-4 font-manrope text-xl text-white transition-all hover:border-orange hover:bg-white hover:text-orange"
+          aria-label="Explore our way"
+        >
+          Explore our way
+        </button>
       </div>
     </section>
   );

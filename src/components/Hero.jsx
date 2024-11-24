@@ -28,7 +28,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="mt-40 w-full">
+    <section className="mt-20 md:mt-40">
       <motion.div
         className="text-center"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -39,12 +39,12 @@ const Hero = () => {
           ease: [0.16, 1, 0.3, 1],
         }}
       >
-        <h1 className="font-dm text-8xl font-semibold">
+        <h1 className="font-dm text-5xl font-semibold md:text-8xl">
           Predictable
           <br />
           growth starts here
         </h1>
-        <p className="text-gray/60 pt-6 font-manrope text-sm">
+        <p className="pt-6 font-manrope text-xs text-gray/60 md:text-sm">
           Squaree helps users to go from Zero to Hero with Pockets flow’s simple
           platform that helps
           <br />
@@ -52,8 +52,8 @@ const Hero = () => {
         </p>
       </motion.div>
 
-      <div className="flex w-full items-start justify-center gap-8 pt-20">
-        <div className="mt-8 shrink-0">
+      <div className="flex w-full flex-col items-center justify-center gap-8 pt-10 md:flex-row md:items-start md:pt-20">
+        <div className="shrink-0 md:mt-8">
           <motion.img
             src={HeroCard1}
             alt="Hero Card 1"
@@ -63,7 +63,7 @@ const Hero = () => {
             animate="visible"
           />
         </div>
-        <div className="mt-24 shrink-0">
+        <div className="shrink-0 md:mt-24">
           <motion.img
             src={HeroCard2}
             alt="Hero Card 2"
@@ -74,7 +74,7 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
           />
         </div>
-        <div className="flex shrink-0 flex-col gap-16">
+        <div className="flex shrink-0 flex-col gap-8">
           <motion.img
             src={HeroCard3}
             alt="Hero Card 3"
@@ -94,7 +94,7 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
           />
         </div>
-        <div className="mt-56 shrink-0">
+        <div className="shrink-0 md:mt-56">
           <motion.img
             src={HeroCard5}
             alt="Hero Card 5"

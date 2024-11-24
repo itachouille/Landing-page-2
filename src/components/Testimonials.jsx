@@ -5,27 +5,28 @@ import Testimonial4 from "../assets/testimonials/testimonial-4.png";
 
 const Testimonials = () => {
   return (
-    <section className="mt-40">
+    <section className="mt-20 max-w-7xl px-4 md:mt-40">
       <h2 className="text-center font-dm text-6xl font-semibold">
-        What squaree users say
+        What Squaree Users Say
       </h2>
-      <p className="text-gray pt-8 text-center font-manrope">
-        Here is how homely can help you
+      <p className="pt-8 text-center font-manrope text-gray">
+        Here is how Squaree can help you
       </p>
-      <div className="flex gap-6 pt-10">
-        <div className="border-gray/20 flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F6F6F6] p-8">
+
+      <div className="mt-10 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
           <p className="font-dm text-2xl font-medium">
             Brilliant houses to rent
           </p>
-          <p className="text-gray">
+          <p className="my-4 text-gray">
             All eFounders teams have moved to Cycle for all things product
-            management and it is truly a game-changer.
+            management, and it is truly a game-changer.
           </p>
           <div className="flex items-center justify-start">
             <img
-              className="size-12"
+              className="size-12 rounded-full object-cover"
               src={Testimonial1}
-              alt="profil's picture"
+              alt="John Master profile"
             />
             <div className="flex flex-col items-start pl-2">
               <span>John Master</span>
@@ -33,20 +34,21 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="border-gray/20 flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F6F6F6] p-8">
+
+        <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
           <p className="font-dm text-2xl font-medium">
             Convenient for searching apartments
           </p>
-          <p className="text-gray">
+          <p className="my-4 text-gray">
             Cycle makes it easy to contact the most relevant users whenever I
             need feedback on a new product initiative. It helps me capture all
             the necessary customer context without friction.
           </p>
           <div className="flex items-center justify-start">
             <img
-              className="size-12"
+              className="size-12 rounded-full object-cover"
               src={Testimonial2}
-              alt="profil's picture"
+              alt="Jane Doe profile"
             />
             <div className="flex flex-col items-start pl-2">
               <span>Jane Doe</span>
@@ -54,21 +56,23 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="border-gray/20 flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F6F6F6] p-8">
+      <div className="mt-10 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
           <p className="font-dm text-2xl font-medium">
             It feels much more safe
           </p>
-          <p className="text-gray">
+          <p className="my-4 text-gray">
             As a company with a strong Slack culture, it’s important that we
             find ways to meet our champions where they are, and Channeled allows
             us to do just that.
           </p>
           <div className="flex items-center justify-start">
             <img
-              className="size-12"
+              className="size-12 rounded-full object-cover"
               src={Testimonial3}
-              alt="profil's picture"
+              alt="Fred Pussa profile"
             />
             <div className="flex flex-col items-start pl-2">
               <span>Fred Pussa</span>
@@ -76,17 +80,18 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="border-gray/20 flex h-[260px] w-[500px] flex-col justify-between rounded-3xl border bg-gradient-to-b from-white to-[#F6F6F6] p-8">
+
+        <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
           <p className="font-dm text-2xl font-medium">Secure search for all</p>
-          <p className="text-gray">
+          <p className="my-4 text-gray">
             All eFounders teams have moved to Cycle for all things product
-            management and it is truly a game-changer.
+            management, and it is truly a game-changer.
           </p>
           <div className="flex items-center justify-start">
             <img
-              className="size-12"
+              className="size-12 rounded-full object-cover"
               src={Testimonial4}
-              alt="profil's picture"
+              alt="Anna Task profile"
             />
             <div className="flex flex-col items-start pl-2">
               <span>Anna Task</span>
