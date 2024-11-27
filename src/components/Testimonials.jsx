@@ -5,15 +5,15 @@ import Testimonial4 from "../assets/testimonials/testimonial-4.png";
 
 const Testimonials = () => {
   return (
-    <section className="mt-20 max-w-7xl px-4 md:mt-40">
-      <h2 className="text-center font-dm text-6xl font-semibold">
+    <section className="mt-20 max-w-5xl px-4 md:mt-40">
+      <h2 className="text-center font-dm text-3xl font-semibold md:text-5xl">
         What Squaree Users Say
       </h2>
-      <p className="pt-8 text-center font-manrope text-gray">
+      <p className="pt-6 text-center font-manrope text-lg text-gray">
         Here is how Squaree can help you
       </p>
 
-      <div className="mt-10 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+      <div className="mt-10 gap-4 md:flex">
         <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
           <p className="font-dm text-2xl font-medium">
             Brilliant houses to rent
@@ -35,7 +35,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
+        <div className="mt-6 rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8 md:mt-0">
           <p className="font-dm text-2xl font-medium">
             Convenient for searching apartments
           </p>
@@ -58,7 +58,7 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+      <div className="mt-6 gap-4 md:flex">
         <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
           <p className="font-dm text-2xl font-medium">
             It feels much more safe
@@ -81,7 +81,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8">
+        <div className="mt-6 rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8 md:mt-0">
           <p className="font-dm text-2xl font-medium">Secure search for all</p>
           <p className="my-4 text-gray">
             All eFounders teams have moved to Cycle for all things product

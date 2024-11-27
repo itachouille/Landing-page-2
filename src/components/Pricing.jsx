@@ -9,31 +9,28 @@ const Pricing = () => {
     <section className="mt-20 max-w-7xl px-4 md:mt-40">
       <div className="flex w-full items-center justify-center gap-3 md:gap-6">
         <span
-          className={`font-manrope text-2xl md:text-4xl ${isOn ? "font-light" : "font-semibold"}`}
+          className={`font-dm text-4xl font-semibold ${isOn ? "text-gray/50" : "text-black"}`}
         >
           Billed Monthly
         </span>
-        <label className="relative cursor-pointer">
-          <input
-            type="checkbox"
-            className="peer sr-only"
-            checked={isOn}
-            readOnly
-          />
-          <div
-            onClick={toggleSwitch}
-            className="peer h-11 w-20 rounded-full bg-orange after:absolute after:left-1 after:top-1 after:size-9 after:rounded-full after:bg-white after:transition-all peer-checked:after:translate-x-full"
-          />
-        </label>
-        <span
-          className={`font-manrope text-2xl md:text-4xl ${!isOn ? "font-light" : "font-semibold"}`}
+        <button
+          onClick={() => toggleSwitch()}
+          className="relative inline-flex h-11 w-20 items-center rounded-full bg-orange transition-colors"
         >
-          Billed Yearly
+          <span
+            className={`inline-block size-9 rounded-full bg-white transition-transform ${
+              isOn ? "translate-x-10" : "translate-x-1"
+            }`}
+          />
+        </button>
+        <span
+          className={`flex items-center gap-2 font-dm text-4xl font-semibold ${isOn ? "text-black" : "text-gray/50"}`}
+        >
+          Billed Yearly <span className="font-manrope text-xl">(save 15%)</span>
         </span>
-        <span className="font-manrope text-sm md:text-xl">(save 15%)</span>
       </div>
 
-      <div className="mx-auto mt-8 flex flex-col gap-10 md:flex-row md:gap-10">
+      <div className="mx-auto mt-14 flex flex-col gap-10 md:flex-row md:gap-10">
         <div className="flex size-full flex-col gap-6 rounded-3xl border border-gray/20 bg-gradient-to-b from-white to-[#F6F6F6] p-8 md:w-[450px]">
           <span className="font-dm text-2xl font-semibold md:text-4xl">
             Free
@@ -65,9 +62,9 @@ const Pricing = () => {
           </span>
           <div>
             <span className="font-dm text-2xl font-semibold md:text-4xl">
-              $12
+              {isOn ? <>$122</> : <>$12</>}
             </span>
-            <span className="font-dm"> /month</span>
+            <span className="font-dm">{isOn ? <> /year</> : <> /month</>}</span>
           </div>
           <p className="font-manrope text-sm text-gray md:text-base">
             Description of the tier list will go here, copy should be concise

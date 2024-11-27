@@ -39,7 +39,7 @@ const Hero = () => {
           ease: [0.16, 1, 0.3, 1],
         }}
       >
-        <h1 className="font-dm text-5xl font-semibold md:text-8xl">
+        <h1 className="font-dm text-5xl font-semibold md:text-7xl">
           Predictable
           <br />
           growth starts here

@@ -9,7 +9,7 @@ const Increase = () => {
 
   return (
     <section className="mt-20 max-w-lg md:mt-40 md:max-w-7xl">
-      <p className="text-center text-lg text-gray/60 md:text-3xl">
+      <p className="text-center text-lg text-gray/60 md:text-xl">
         We have the fast paced growing companies with us
       </p>
 
@@ -40,26 +40,26 @@ const Increase = () => {
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            className="flex shrink-0 gap-20"
+            className="flex shrink-0 gap-44"
           >
             {logos.map((logo, idx) => (
               <img
                 key={idx}
                 src={logo}
                 alt={`Carousel Logo ${idx + 1}`}
-                className="h-20 object-contain"
+                className="object-contain"
               />
             ))}
-            <div className="w-10 shrink-0" />
+            <div className="shrink-0" />
           </motion.div>
         ))}
       </div>
 
       <div className="pt-20 md:pt-40">
-        <h2 className="text-center font-dm text-4xl font-semibold md:text-6xl">
+        <h2 className="text-center font-dm text-4xl font-semibold md:text-5xl">
           Turn your growth into Squaree
         </h2>
-        <p className="mx-auto mt-8 max-w-3xl px-4 text-center font-manrope text-gray md:px-0">
+        <p className="mx-auto mt-8 max-w-3xl px-4 text-center font-manrope text-lg text-gray md:px-0">
           The expectation that productivity should always lead to tangible
           results or accomplishments & notion that certain types of work or
           activities are more valuable or productive than others.
@@ -79,7 +79,7 @@ const Increase = () => {
         ].map((stat, idx) => (
           <div key={idx} className="flex flex-col items-center">
             <span className="text-6xl font-semibold">{stat.value}</span>
-            <span className="mt-4 max-w-xs text-center text-gray/60">
+            <span className="mt-4 max-w-36 text-center text-base text-gray/60">
               {stat.label}
             </span>
           </div>
@@ -88,10 +88,22 @@ const Increase = () => {
 
       <div className="mt-14 flex w-full justify-center">
         <button
-          className="rounded-3xl border bg-orange px-6 py-4 font-manrope text-xl text-white transition-all hover:border-orange hover:bg-white hover:text-orange"
+          className="flex items-center justify-center gap-1 rounded-3xl border bg-orange px-6 py-3 font-manrope text-lg text-white transition-all hover:border-orange hover:bg-white hover:text-orange"
           aria-label="Explore our way"
         >
           Explore our way
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 -1 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
         </button>
       </div>
     </section>

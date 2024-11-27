@@ -42,7 +42,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-10 z-50 w-full max-w-7xl rounded-2xl border border-gray/10 bg-white p-3 shadow-lg md:p-5">
+    <nav className="sticky top-10 z-50 w-full max-w-6xl rounded-2xl border border-gray/10 bg-white p-3 drop-shadow md:p-4">
       <div className="flex items-center justify-between">
         <a className="flex items-center" href="/">
           <img className="size-10" src={Logo} alt="logo" />
@@ -61,7 +61,7 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter(item.id)}
               onMouseLeave={handleMouseLeave}
             >
-              <a className="flex items-center text-lg" href={item.url}>
+              <a className="flex items-center text-base" href={item.url}>
                 {item.title}
                 {item.icon && (
                   <img
