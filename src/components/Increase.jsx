@@ -88,7 +88,7 @@ const Increase = () => {
 
       <div className="mt-14 flex w-full justify-center">
         <button
-          className="flex items-center justify-center gap-1 rounded-3xl border bg-orange px-6 py-3 font-manrope text-lg text-white transition-all hover:border-orange hover:bg-white hover:text-orange"
+          className="group relative flex items-center justify-center gap-1 rounded-3xl border bg-orange px-6 py-3 font-manrope text-lg text-white transition-all duration-300 hover:ring-2 hover:ring-orange hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2"
           aria-label="Explore our way"
         >
           Explore our way
@@ -100,10 +100,12 @@ const Increase = () => {
             fill="none"
             stroke="currentColor"
             strokeWidth={2}
+            className="transition-transform duration-300 ease-in-out group-hover:translate-x-[2px]"
           >
             <path d="M5 12h14" />
             <path d="m12 5 7 7-7 7" />
           </svg>
+          <div className="absolute -left-[75px] -top-[50px] h-[155px] w-8 rotate-[35deg] bg-white opacity-20 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:left-[120%]" />
         </button>
       </div>
     </section>

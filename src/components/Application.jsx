@@ -9,7 +9,7 @@ const Application = () => {
         <motion.div
           initial={{ opacity: 0, x: -400 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           viewport={{ once: true }}
           className="max-w-2xl"
         >
@@ -26,7 +26,7 @@ const Application = () => {
           alt="dual card"
           initial={{ opacity: 0, x: 400 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           viewport={{ once: true }}
           className="mt-4 md:mt-0"
         />
@@ -38,14 +38,14 @@ const Application = () => {
           alt="brand"
           initial={{ opacity: 0, x: -400 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           viewport={{ once: true }}
         />
         <motion.div
           className="flex flex-col justify-center pt-4 md:ml-16 md:pt-0"
           initial={{ opacity: 0, x: 400 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           viewport={{ once: true }}
         >
           <h2 className="font-dm text-3xl font-semibold md:text-5xl">

@@ -76,7 +76,7 @@ const Navbar = () => {
                   initial="close"
                   animate={hoveredMenu === item.id ? "open" : "close"}
                   variants={subMenuAnimate}
-                  className="absolute -left-1 mt-2 w-40 rounded-lg border border-gray/10 bg-white p-3 shadow-md"
+                  className="absolute -left-1 mt-2 w-40 rounded-lg border border-gray/10 bg-white p-2 shadow-md"
                 >
                   {item.submenu.map((subItem, index) => (
                     <a

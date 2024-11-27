@@ -51,8 +51,9 @@ const Pricing = () => {
             </li>
             <li className="list-disc pt-4 font-manrope">10 Social Profiles</li>
           </ul>
-          <button className="rounded-3xl border bg-orange px-6 py-4 font-manrope text-sm text-white transition-all hover:border-orange hover:bg-white hover:text-orange md:text-xl">
+          <button className="group relative rounded-3xl border bg-orange px-6 py-4 font-manrope text-sm text-white transition-all duration-300 hover:ring-2 hover:ring-orange hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2 md:text-xl">
             Try for free
+            <div className="absolute -left-[75px] -top-[50px] h-[155px] w-8 rotate-[35deg] bg-white opacity-20 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:left-[120%]" />
           </button>
         </div>
 
@@ -84,8 +85,9 @@ const Pricing = () => {
             <li className="list-disc pt-4 font-manrope">Calendar View</li>
             <li className="list-disc pt-4 font-manrope">24/7 Support</li>
           </ul>
-          <button className="rounded-3xl border bg-orange px-6 py-4 font-manrope text-sm text-white transition-all hover:border-orange hover:bg-white hover:text-orange md:text-xl">
+          <button className="group relative rounded-3xl border bg-orange px-6 py-4 font-manrope text-sm text-white transition-all duration-300 hover:ring-2 hover:ring-orange hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2 md:text-xl">
             Subscribe Now
+            <div className="absolute -left-[75px] -top-[50px] h-[155px] w-8 rotate-[35deg] bg-white opacity-20 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:left-[120%]" />
           </button>
         </div>
       </div>
